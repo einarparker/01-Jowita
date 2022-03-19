@@ -1,0 +1,302 @@
+Box sizing rules *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+Set core body defaults
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+/*
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+/* input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} */
+/*////////////////////////////////////////////////////////////////////////////////////
+////////////////////////// STYLES /////////////////////////////////////////////////*/
+
+body {
+  font-family: "Archivo", sans-serif;
+  /* font-family: 'Archivo Narrow', sans-serif; */
+}
+/* .menu {
+  font-family: Archivo;
+  font-size: 0.8rem;
+  grid-column: 5;
+  justify-self: center;
+  display: none;
+} */
+
+.logo {
+  max-width: 30vw;
+  max-height: 30vh;
+  grid-column: 2/4;
+  align-self: center;
+}
+.hamburger {
+  grid-column: 5;
+  justify-self: end;
+  align-self: center;
+  transition: 0.3s ease;
+}
+/* #menu-box:hover {
+  cursor: pointer;
+} */
+/* .menu-bg,
+#menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #dc052d, #dc052d);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%, -30%);
+} */
+/* .bar {
+  width: 2rem;
+  height: 3px;
+  display: block;
+  border-radius: 5px;
+  background-color: #f7fffe;
+  margin-top: 6px;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+} */
+
+/* .change {
+  display: block;
+} */
+
+/* .change .bar {
+  background-color: #5a5558;
+}
+
+.change #bar1 {
+  transform: translateY(9px) rotateZ(-45deg);
+  transition: background-color 2s ease-out;
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-9px) rotateZ(45deg);
+  transition: background-color 2s ease-out;
+} */
+
+h1 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.025em;
+
+  color: #fc1a2e;
+  grid-column: 2/5;
+  grid-row: 2/3;
+  z-index: 3;
+}
+h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+
+  line-height: 109.3%;
+  letter-spacing: -0.035em;
+  color: #5a5558;
+  grid-column: 2/6;
+  z-index: 3;
+  grid-row: 3/4;
+  align-self: start;
+}
+
+h2 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #5a5558;
+  grid-column: 2/6;
+  align-self: start;
+  grid-row: 4;
+  z-index: 3;
+}
+
+.jowita {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  background-color: #c6d1cf;
+  column-gap: 0.5rem;
+  grid-template-columns: 30px repeat(4, 1fr) 30px;
+  grid-template-rows: repeat(4, 0.5fr) max-content, auto auto auto;
+}
+
+.photowrap {
+  grid-row: 4/6;
+  grid-column: 2/6;
+  width: 70vw;
+  justify-self: end;
+  align-self: end;
+  z-index: 2;
+}
+.hero {
+  object-fit: scale-down;
+}
+.elipse {
+  display: block;
+  grid-row: 4/6;
+  grid-column: 3/6;
+  justify-self: center;
+  align-self: end;
+}
+
+button {
+  display: block;
+  grid-row: 6;
+  grid-column: 2/6;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #fc1a2e;
+  border-radius: 2.5rem;
+  border: 4px solid white;
+  cursor: pointer;
+}
+.phone {
+  font-style: normal;
+  font-weight: 700;
+}
+/* button:focus {
+  outline:none;
+  box-shadow: none;
+} */
+.testimonial {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 116.3%;
+  text-align: left;
+  color: #5a5558;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02rem;
+  grid-row: 7;
+  grid-column: 3 /5;
+  align-self: start;
+  z-index: 2;
+  height: auto;
+}
+
+.testimonial-background {
+  grid-row: 7;
+  grid-column: 1/7;
+  background-color: #c4c4c4;
+  width: 100vw;
+}
+.bold {
+  font-weight: 600;
+}
+
+.uslugi {
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  grid-row: 9;
+}
+.cennik {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(131, 186, 250);
+  grid-row: 9;
+}
+.omnie {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(225, 0, 255);
+  grid-row: 10;
+}
+.kontakt {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 174, 0);
+  grid-row: 11;
+}
