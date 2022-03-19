@@ -76,13 +76,13 @@ body {
   font-family: "Archivo", sans-serif;
   /* font-family: 'Archivo Narrow', sans-serif; */
 }
-/* .menu {
+.menu {
   font-family: Archivo;
   font-size: 0.8rem;
   grid-column: 5;
   justify-self: center;
   display: none;
-} */
+}
 
 .logo {
   max-width: 30vw;
@@ -119,7 +119,7 @@ body {
   height: 460px;
   transform: translate(-60%, -30%);
 } */
-/* .bar {
+.bar {
   width: 2rem;
   height: 3px;
   display: block;
@@ -130,13 +130,12 @@ body {
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
-} */
+}
 
-/* .change {
+.change {
   display: block;
-} */
-
-/* .change .bar {
+}
+*/ .change .bar {
   background-color: #5a5558;
 }
 
@@ -152,7 +151,7 @@ body {
 .change #bar3 {
   transform: translateY(-9px) rotateZ(45deg);
   transition: background-color 2s ease-out;
-} */
+}
 
 h1 {
   font-family: "Archivo";
@@ -161,7 +160,7 @@ h1 {
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.025em;
-
+  font-kerning: auto;
   color: #fc1a2e;
   grid-column: 2/5;
   grid-row: 2/3;
@@ -172,7 +171,7 @@ h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-
+  font-kerning: auto;
   line-height: 109.3%;
   letter-spacing: -0.035em;
   color: #5a5558;
@@ -187,9 +186,9 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-
+  font-kerning: auto;
   line-height: 133%;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   text-transform: capitalize;
   color: #5a5558;
   grid-column: 2/6;
@@ -204,15 +203,15 @@ h2 {
   width: 100vw;
   background-color: #c6d1cf;
   column-gap: 0.5rem;
-  grid-template-columns: 30px repeat(4, 1fr) 30px;
-  grid-template-rows: repeat(4, 0.5fr) max-content, auto auto auto;
+  grid-template-columns: 30px repeat(4, minmax(10px, 2fr)) 30px;
+  grid-template-rows: repeat(4, 1fr) max-content minmax(70px, 1fr) auto;
 }
 
 .photowrap {
-  grid-row: 4/6;
+  grid-row: 5/6;
   grid-column: 2/6;
-  width: 70vw;
-  justify-self: end;
+  width: 65vw;
+  justify-self: center;
   align-self: end;
   z-index: 2;
 }
@@ -221,23 +220,27 @@ h2 {
 }
 .elipse {
   display: block;
+  width: 65vw;
+  object-fit: cover;
   grid-row: 4/6;
-  grid-column: 3/6;
+  grid-column: 2/7;
   justify-self: center;
   align-self: end;
 }
 
 button {
-  display: block;
+  display: inline-block;
   grid-row: 6;
   grid-column: 2/6;
   font-family: "Archivo", sans-serif;
   font-weight: 800;
-  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-size: 5vw;
   color: white;
   background-color: #fc1a2e;
   border-radius: 2.5rem;
   border: 4px solid white;
+  text-align: center;
   cursor: pointer;
 }
 .phone {
@@ -253,17 +256,19 @@ button {
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
-  line-height: 116.3%;
+  line-height: 100%;
   text-align: left;
   color: #5a5558;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  text-indent: 10%;
   letter-spacing: 0.02rem;
   grid-row: 7;
-  grid-column: 3 /5;
+  grid-column: 3 /6;
   align-self: start;
   z-index: 2;
-  height: auto;
+  font-kerning: auto;
+  /* height: auto; */
 }
 
 .testimonial-background {
