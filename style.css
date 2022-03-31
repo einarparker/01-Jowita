@@ -292,7 +292,7 @@ section {
   text-indent: 10%;
   letter-spacing: 0.02rem;
   grid-row: 7;
-  grid-column: 3 /6;
+  grid-column: 2/6;
   align-self: start;
   z-index: 2;
   font-kerning: auto;
@@ -357,7 +357,7 @@ section {
   }
   .testimonial {
     font-size: 0.85rem;
-    grid-column: 3 /5;
+    grid-column: 2/6;
   }
   .logo {
     min-width: 20vw;
@@ -894,6 +894,15 @@ ul {
     grid-template-columns: 200px repeat(7, 1fr) 200px;
   }
 }
+@media (min-width: 1900px) {
+  .uslugi1 {
+    font-size: 1.6rem;
+  }
+
+  .uslugi2 {
+    font-size: 1.6rem;
+  }
+}
 
 /* //////////////////////////////// ABOUT  /////////////////////////////////////////////////// */
 .omnie {
@@ -1045,6 +1054,17 @@ ul {
     grid-column: 4/10;
     grid-row: 1;
     clip-path: ellipse(45% 90% at 90% 49%);
+  }
+}
+
+@media (min-width: 1900px) {
+  .motto {
+    padding-inline: 5rem;
+    font-size: 1.6rem;
+  }
+  ul {
+    padding: 5rem;
+    font-size: 1.8rem;
   }
 }
 
