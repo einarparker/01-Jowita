@@ -73,7 +73,7 @@ select {
 :root {
   --main-text-color: #5a5558;
   --footernav-color: #c4c4c4;
-  --jowita-color: #8ec4dd;
+  --jowita-color: #b1b3c9;
 }
 
 body {
@@ -283,7 +283,7 @@ section {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 100%;
   text-align: left;
   color: var(--main-text-color);
@@ -296,6 +296,7 @@ section {
   align-self: start;
   z-index: 2;
   font-kerning: auto;
+  hyphens: auto;
 }
 .testimonial2 {
   font-family: "Archivo";
@@ -310,11 +311,12 @@ section {
   text-indent: 10%;
   letter-spacing: 0.02rem;
   grid-row: 7;
-  grid-column: 3 /6;
+
   align-self: start;
   z-index: 2;
   font-kerning: auto;
   display: none;
+  hyphens: auto;
 }
 
 .testimonial-background {
@@ -327,11 +329,11 @@ section {
 .bold {
   font-weight: 600;
 }
-.testimonial-wrap {
+/* .testimonial-wrap {
   margin-top: 0.5rem;
   grid-column: 3/6;
   grid-row: 7;
-}
+} */
 
 @media (min-width: 400px) {
   .button-hero {
@@ -354,7 +356,7 @@ section {
     padding-block: 1rem;
   }
   .testimonial {
-    font-size: 2vw;
+    font-size: 0.85rem;
     grid-column: 3 /5;
   }
   .logo {
@@ -447,12 +449,14 @@ section {
     z-index: 2;
   }
   .testimonial {
-    font-size: 0.85rem;
+    padding: 1rem;
+    font-size: 1rem;
     grid-column: 2/4;
   }
   .testimonial2 {
+    padding: 1rem;
     display: block;
-    font-size: 0.85rem;
+    font-size: 1rem;
     grid-column: 4/6;
     grid-row: 7/8;
   }
@@ -487,10 +491,10 @@ section {
     z-index: 2;
   }
   .testimonial {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .testimonial2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .menu li {
     display: inline;
@@ -655,6 +659,82 @@ section {
     min-width: 11vw;
   }
 }
+/* ///////////////////////////OPINE /////////////////////// */
+.opinie {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  background-color: #c6d1cf;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  /* grid-template-rows: repeat(4, auto-fit); */
+}
+.opinia-card {
+  background-color: #c4c4c4;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  font-size: 0.85rem;
+  margin: auto;
+  border-radius: 5px;
+  /* max-height: 40vh; */
+  max-width: 45ch;
+  text-indent: 10%;
+}
+.opinia {
+  margin: auto;
+  hyphens: auto;
+}
+span {
+  font-weight: bold;
+  position: relative;
+  margin-left: 15px;
+}
+.grid-column-middle {
+  grid-column: 2/3;
+}
+@media (min-width: 600px) {
+  .opinia-card {
+    font-size: 1.2rem;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    max-width: 45ch;
+  }
+  .opinie {
+    grid-template-columns: 10rem repeat(1, 1fr) 10rem;
+    grid-gap: 1em;
+  }
+
+  .op1 {
+    grid-row: 1;
+  }
+  .op2 {
+    grid-row: 2;
+  }
+  .op3 {
+    grid-row: 3;
+  }
+  .op4 {
+    grid-row: 4;
+  }
+
+  @media (min-width: 1024px) {
+    .opinia-card {
+      font-size: 1.3rem;
+      max-width: 65ch;
+    }
+  }
+  @media (min-width: 1200px) {
+    .opinia-card {
+      font-size: 1.3rem;
+      max-width: 55ch;
+    }
+  }
+  @media (min-width: 1919px) {
+    .opinia-card {
+      font-size: 2rem;
+      max-width: 55ch;
+    }
+  }
+}
 
 /*//////////////////////////////// USLUGI  /////*/
 ul {
@@ -721,21 +801,45 @@ ul {
   .card1 {
     grid-row: 1/2;
     grid-column: 3/8;
-    margin: 0;
-    /* max-height: 90vh; */
   }
 
   .card2 {
     grid-row: 2/3;
     grid-column: 3/8;
-    margin: 0;
-    /* max-height: 90vh; */
   }
   .first-aid {
     width: 40vw;
   }
   .uslugi {
     gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card1 {
+    grid-row: 1/2;
+    grid-column: 3/8;
+    margin: 0;
+  }
+
+  .card2 {
+    grid-row: 2/3;
+    grid-column: 3/8;
+    margin: 0;
+  }
+  .first-aid {
+    width: 40vw;
+  }
+  .uslugi {
+    gap: 0.5rem;
+  }
+
+  .uslugi1 {
+    font-size: 1.6rem;
+  }
+
+  .uslugi2 {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1200px) {
@@ -947,7 +1051,6 @@ ul {
 /* //////////////////////////////////KONTAKT  ///////////////////////////////////////////////// */
 .kontakt {
   display: grid;
-
   background-color: #c6d1cf;
   grid-template-columns: 2rem repeat(5, 1fr) 2rem;
   gap: 0.5rem;
@@ -962,11 +1065,11 @@ ul {
   width: 60vw;
   grid-row: 8;
 }
-
+.ft-weight-700 {
+  font-weight: 700;
+}
 .name-contact {
   font-family: "Archivo";
-  font-style: normal;
-  font-weight: 700;
   font-size: 6vw;
   font-kerning: auto;
   line-height: 100%;
@@ -990,31 +1093,39 @@ ul {
   grid-row: 4;
 }
 .mail {
+  align-self: center;
   width: 10vw;
   grid-column: 2;
   grid-row: 5;
+  cursor: pointer;
 }
 #mail-text {
   grid-column: 3/5;
   align-self: center;
   grid-row: 5;
   color: var(--main-text-color);
+  cursor: pointer;
 }
-.phone {
+.phone-icon {
+  align-self: center;
   grid-column: 2;
   grid-row: 6;
+  cursor: pointer;
 }
 #phone-text {
   grid-column: 3/6;
   align-self: center;
   grid-row: 6;
   color: var(--main-text-color);
+  cursor: pointer;
 }
 
 .facebook {
+  align-self: center;
   grid-column: 2;
   width: 10vw;
   grid-row: 7;
+  cursor: pointer;
 }
 
 #facebook-text {
@@ -1022,6 +1133,8 @@ ul {
   align-self: center;
   grid-row: 7;
   color: var(--main-text-color);
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .button-footer {
@@ -1051,14 +1164,136 @@ ul {
   grid-column: 2/7;
   grid-row: 10;
   justify-self: center;
+  align-self: end;
   z-index: 2;
 }
 .footer-background {
   display: block;
   background-color: var(--footernav-color);
   width: 100vw;
-
   grid-column: 1/8;
   grid-row: 9/11;
   z-index: 1;
+}
+
+@media (min-width: 700px) {
+  .button-footer {
+    grid-column: 3/6;
+  }
+  #mail-text {
+    font-size: 1.6rem;
+  }
+  .mail {
+    max-width: 3.5rem;
+  }
+
+  #phone-text {
+    font-size: 1.6rem;
+  }
+  .phone-icon {
+    min-width: 3rem;
+  }
+
+  #facebook-text {
+    font-size: 1.6rem;
+  }
+  .facebook {
+    max-width: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-footer {
+    grid-column: 2/4;
+    grid-row: 6/7;
+    max-height: 20vh;
+    max-width: 35vw;
+    font-weight: 800;
+    line-height: 4vw;
+    font-size: 3vw;
+  }
+  .kontakt {
+    grid-template-columns: 6rem repeat(5, 1fr) 6rem;
+  }
+
+  .phone-icon {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+  }
+  #phone-text {
+    font-size: 1.6rem;
+    grid-column: 3/4;
+    justify-self: start;
+    align-self: center;
+    grid-row: 4/5;
+  }
+  #facebook-text {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    grid-column: 3/4;
+    justify-self: start;
+    align-self: center;
+    grid-row: 5/6;
+  }
+  .facebook {
+    grid-row: inherit;
+    max-width: 3.5rem;
+    justify-self: center;
+  }
+  .contact-us {
+    margin: 0;
+    display: block;
+    grid-column: 4/7;
+    justify-self: center;
+    align-self: end;
+    max-width: 37vw;
+    grid-row: 1/6;
+  }
+  .name-contact {
+    padding-top: 3rem;
+    grid-row: 1/2;
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: end;
+    font-size: 3rem;
+  }
+  .title-contact {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 3.5rem;
+    align-self: end;
+    justify-self: start;
+  }
+  .mail {
+    grid-row: 3/4;
+    max-width: 4rem;
+    justify-self: center;
+  }
+  #mail-text {
+    font-size: 1.6rem;
+    grid-column: 3/4;
+    justify-self: start;
+    align-self: center;
+    grid-row: 3/4;
+  }
+
+  .logo-footer {
+    width: 15vw;
+    align-self: center;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    z-index: 2;
+  }
+
+  .copyrights {
+    font-size: 1rem;
+    grid-column: 2/7;
+    grid-row: 7/8;
+  }
+
+  .footer-background {
+    grid-row: 7/8;
+    max-height: 20vh;
+  }
 }
