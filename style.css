@@ -749,159 +749,63 @@ ul {
   display: grid;
   width: 100vw;
   background-color: #c7ccdb;
-  align-items: center;
   grid-template-columns: 30px repeat(7, 1fr) 30px;
-  grid-template-rows: repeat(3, 0, 5fr);
-  /* gap: 0.5rem; */
+  align-items: center;
 }
 
-.first-aid {
-  display: block;
-  width: 40vw;
-  margin: auto;
-}
 .nursing {
-  display: block;
-  width: 40vw;
-  margin: auto;
-}
-.card1 {
-  margin: auto;
-  margin-bottom: 0.5rem;
-  background-color: var(--jowita-color);
-  border-radius: 10px;
-  padding-inline: 1rem;
-  padding-block: 1rem;
   grid-row: 1/3;
   grid-column: 2/9;
-  /* filter: drop-shadow(0px 4px 4px rgba(46, 53, 66, 0.25)); */
-}
-.card2 {
+  width: 65vw;
   margin: auto;
-  margin-block: 0.5rem;
+  z-index: 5;
+}
+.card1 {
+  max-width: 100vw;
+  margin: 1rem;
   background-color: var(--jowita-color);
   border-radius: 10px;
   padding-inline: 1rem;
   padding-block: 1rem;
-  grid-row: 3/4;
-  grid-column: 2/9;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  grid-row: 1/2;
+  grid-column: 1/10;
 }
+.uslugi-wrapper {
+  display: grid;
+  max-width: 100vw;
+}
+
 .uslugi1 {
+  grid-row: 1/2;
   font-size: 1rem;
   color: var(--main-text-color);
 }
 
 .uslugi2 {
+  grid-row: 2/3;
   font-size: 1rem;
   color: var(--main-text-color);
 }
-
-@media (min-width: 600px) {
-  .card1 {
-    grid-row: 1/2;
-    grid-column: 3/8;
-  }
-
-  .card2 {
-    grid-row: 2/3;
-    grid-column: 3/8;
-  }
-  .first-aid {
-    width: 40vw;
-  }
-  .uslugi {
-    gap: 0.5rem;
-  }
+.download-pricing {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-transform: uppercase;
+  grid-row: 2/3;
+  grid-column: 3/8;
+  background-color: rgb(66, 152, 209);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 2rem;
+  border: 2px solid white;
+  color: #f7fffe;
+  align-self: start;
 }
-
-@media (min-width: 1024px) {
-  .card1 {
-    grid-row: 1/2;
-    grid-column: 3/8;
-    margin: 0;
-  }
-
-  .card2 {
-    grid-row: 2/3;
-    grid-column: 3/8;
-    margin: 0;
-  }
-  .first-aid {
-    width: 40vw;
-  }
-  .uslugi {
-    gap: 0.5rem;
-  }
-
-  .uslugi1 {
-    font-size: 1.6rem;
-  }
-
-  .uslugi2 {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 1200px) {
-  .uslugi-title {
-    display: block;
-    color: var(--main-text-color);
-    margin: auto;
-    grid-row: 1;
-    grid-column: 5/6;
-    font-size: 2rem;
-  }
-  .card1 {
-    grid-row: 1/4;
-    grid-column: 2/5;
-  }
-  .card2 {
-    grid-row: 1/4;
-    grid-column: 6/9;
-  }
-  .uslugi1 {
-    font-size: 1.2rem;
-  }
-
-  .uslugi2 {
-    font-size: 1.2rem;
-  }
-  .first-aid {
-    width: 35vw;
-  }
-  .nursing {
-    width: 35vw;
-  }
-  .uslugi {
-    grid-template-columns: 100px repeat(7, 1fr) 100px;
-  }
-}
-@media (min-width: 1400px) {
-  .uslugi1 {
-    font-size: 1.2rem;
-  }
-
-  .uslugi2 {
-    font-size: 1.2rem;
-  }
-  .first-aid {
-    width: 30vw;
-  }
-  .nursing {
-    width: 30vw;
-  }
-  .uslugi {
-    grid-template-columns: 200px repeat(7, 1fr) 200px;
-  }
-}
-@media (min-width: 1900px) {
-  .uslugi1 {
-    font-size: 1.6rem;
-  }
-
-  .uslugi2 {
-    font-size: 1.6rem;
-  }
+a {
+  color: #f7fffe;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* //////////////////////////////// ABOUT  /////////////////////////////////////////////////// */
@@ -929,7 +833,7 @@ ul {
 .motto {
   color: var(--main-text-color);
   font-weight: 700;
-  padding-left: 1rem;
+  padding-inline: 2rem;
   text-transform: capitalize;
 }
 .heart {
@@ -953,6 +857,7 @@ ul {
   color: var(--main-text-color);
   font-size: 1rem;
   margin-bottom: 1rem;
+  padding-inline: 2rem;
 }
 .tube {
   width: 25vw;
@@ -980,6 +885,17 @@ ul {
   }
   .about {
     margin-top: 7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  ul {
+    font-size: 1.5rem;
+    padding-inline: 3rem;
+  }
+  .motto {
+    font-size: 1.3rem;
+    padding-inline: 3rem;
   }
 }
 
