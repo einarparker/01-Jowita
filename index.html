@@ -17,7 +17,7 @@
 
   <body>
       <div class="wrapper">
-      <section class="jowita">
+      <section class="jowita" id="home">
         <div class="nav-background"></div>
         <div class="logo">
           <a href="index.html">
@@ -36,14 +36,19 @@
           <div id="bar3" class="bar"></div>
         </span>
 
-        <nav class="menu grid-menu">
+        <nav class="menu grid-menu" id="menu-small">
           <ul>
-            <li>  <a #href="#uslugi" >Usługi</a> </li>
-            <li> O Mnie </li>
-            <li> Kontakt </li>
+            <li><a href="#uslugi" >Usługi</a> </li>
+            <li><a href="#opinie" > Opinie</a> </li>
+            <li><a href="#cennik" >Cennik</a> </li>
+            <li><a href="#about" >O Mnie </a></li>
+            <li><a href="#contact" > Kontakt</a> </li>
           </ul>
         </nav>
-        <div class="menu-bg" id="menu-bg"></div>
+        <div class="menu-bg" id="menu-bg">
+
+
+        </div>
 
         <h1 class="title"
           >Usługi Pielęgniarskie <br>
@@ -62,7 +67,7 @@
         </div>
 
         <button class="button-hero"
-          >POPROŚ O POMOC <br /><p class="phone">+48 607 855 565</p></button>
+          >POPROŚ O POMOC <br /><a href="tel:0607 855 565">+48 607 855 565</a></button>
 
         <div class="testimonial-background"></div>
 
@@ -80,7 +85,7 @@
 
       </section>
 
-      <section class="opinie">
+      <section class="opinie" id="opinie">
 
       <card class="opinia-card op1 grid-column-middle">
       <div class="opinia">“Obsługa pielęgniarska super, wysoki profesjonalizm i wiedza. Polecam na terenie Hajnówki, jedyna osoba która chciała się zająć moim przypadkiem.”<br>
@@ -107,7 +112,7 @@
   </section>
 
 
-      <section class="uslugi">
+      <section class="uslugi" id="uslugi" >
         <h1 class="uslugi-title">USŁUGI</h1>
 
 
@@ -129,7 +134,7 @@
             <li>usuwanie szwów-&nbsp<strong>10zł</strong></li>
             <li>zmiana opatrunku-&nbsp<strong>10zł</strong></li>
             <li>pielęgnacja wkłucia centralnego-&nbsp<strong>10zł</strong></li>
-            <li>pielęgnacja zgłebnika Peg-&nbsp<strong>10zł</strong></li>
+            <li>pielęgnacja zgłębnika Peg-&nbsp<strong>10zł</strong></li>
             <li>pielęgnacja odleżyny-&nbsp<strong>10zł</strong></li>
             <li>toaleta ciała pacjenta-&nbsp<strong>10zł</strong></li>
             <li>opieka domowa-&nbsp<strong>10zł</strong></li>
@@ -139,28 +144,14 @@
 
         </div>
 
-
-        <!-- <div class="card2"> -->
-          <!-- <img class="first-aid" src="/illustrations/First aid kit-bro.svg" /> -->
-        <!-- <ul class="uslugi2">
-
-            <li>usuwanie szwów-&nbsp<strong>10zł</strong></li>
-            <li>zmiana opatrunku-&nbsp<strong>10zł</strong></li>
-            <li>pielęgnacja wkłucia centralnego-&nbsp<strong>10zł</strong></li>
-            <li>pielęgnacja zgłebnika Peg-&nbsp<strong>10zł</strong></li>
-            <li>pielęgnacja odleżyny-&nbsp<strong>10zł</strong></li>
-            <li>toaleta ciała pacjenta-&nbsp<strong>10zł</strong></li>
-            <li>opieka domowa-&nbsp<strong>10zł</strong></li>
-        </ul>
-      </div> -->
-      <div class="download-pricing"><a href="/cennik/cennik2022.pdf">
+      <div class="download-pricing"id="cennik"><a href="/cennik/cennik2022.pdf" download>
         Ściągnij pełny cennik</a>
       </div>
       </section>
 
         <section class="omnie" >
 
-        <div class="card1-about">
+        <div class="card1-about" id="about">
       <img class="heart" src="/illustrations/freepik--Heart--inject-32.svg" />
 
       <p class="about">
@@ -168,7 +159,7 @@
         <div class="motto"><h3> "WYBIERZ PRACĘ, KTÓRĄ KOCHASZ, A NIE BĘDZIESZ MUSIAŁ PRACOWAĆ NAWET PRZEZ JEDEN DZIEŃ W SWOIM ŻYCIU”</h3><br></div>
         <ul>
         <li>Od 18 lat pracuję na stanowisku pielęgniarki anstezjologicznej na bloku operacyjnym</li>
-        <li>Od 2019 r.pracuję w firmie VitalAire, która zajmuje się opieką pacjentów przewlekle chorych wymagających leczenia respiratorem w warunkach domowych</li>
+        <li>Od 2019 r.pracuję w firmie VitalAire, która zajmuje się opieką pacjentów przewlekle chorych<br>wymagających leczenia respiratorem w warunkach domowych</li>
         <li>Od 2021 rozpoczęłam pracę w pracowni tomografii komputerowej TMS "DIAGNOSTYKA"</li>
         <li>Od 3 lat opiekuję się Kubusiem - chłopcem chorym na SMA </li>
         <br>
@@ -197,8 +188,8 @@
 
 
 
-      <section class="kontakt" >
-        <button class="button-footer">POPROŚ O POMOC <br /><p class="phone">+48 607 855 565</p>
+      <section class="kontakt" id="contact">
+        <button class="button-footer">POPROŚ O POMOC <br /><a href="tel:607 855 565">+48 607 855 565</a>
         </button>
         <h1 class="kontakt-title">Kontakt</h1>
         <h2 class="name-contact ft-weight-700">Jowita Koryga</h2>
@@ -207,14 +198,16 @@
           Opieka <br> Pielęgniarska</h1>
 
         <img class="mail"class="icon" src="/illustrations/gmail.svg" />
-        <p class="contact-text ft-weight-700" id="mail-text">emial:jowitakoryga@wp.pl</p>
+        <p class="contact-text ft-weight-700" id="mail-text"><a href="mailto:jowitakoryga@wp.pl"> email:jowitakoryga@wp.pl</a></p>
         <img class="phone-icon" class="icon"src="/illustrations/phone.svg" />
-        <p class="contact-text ft-weight-700" id="phone-text">telefon: 607 855 565</p>
+        <p class="contact-text ft-weight-700" id="phone-text"><a href="tel:0607 855 565">telefon: 607 855 565</a></p>
         <img class="facebook" class="icon" src="/illustrations/facebook.svg" />
-        <p class="contact-text ft-weight-700"id="facebook-text">Facebook link</p>
+        <p class="contact-text ft-weight-700"id="facebook-text"><a href="https://www.facebook.com/"> Facebook link</a></p>
         <img class="contact-us" src="/illustrations/Contact us-bro.svg" />
         <div class="footer-background"></div>
+        <a href="#home">
           <img  class="logo-footer" src="/logo/jowita_logo_white.svg" />
+        </a>
           <p class="copyrights ">© 2022  Einar Parker All rights reserved</p>
 
       </section>
