@@ -654,7 +654,7 @@ section {
 }
 @media (min-width: 1900px) {
   nav {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .jowita {
     grid-template-columns: 250px repeat(4, minmax(10vw, 2fr)) 250px;
